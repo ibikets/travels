@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('title')
+    Login Page
+@stop
+
 @section('content')
 
 
@@ -68,9 +72,10 @@
     <hr>
     <div class="text-center">
         <ul class="list-inline">
-            <li><a class="text-muted" href="{{ route('login') }}" data-toggle="tab">Login</a></li>
-            <li><a class="text-muted" href="{{ route('password.request') }}" data-toggle="tab">Forgot Password</a></li>
-            <li><a class="text-muted" href="{{ route('register') }}" data-toggle="tab">Signup</a></li>
+            <li><a href="{{ route('login') }}">Login</a></li>
+            <li><a href="{{ route('register') }}">Register</a></li>
+            <li><a href="{{ route('password.request') }}">Forgot Password</a></li>
+
         </ul>
     </div>
   </div>
@@ -95,3 +100,4 @@
 
 
 
+@stop
